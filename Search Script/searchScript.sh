@@ -1,10 +1,12 @@
 #! /bin/bash
 
 read -p "Enter the string you want to search for in the files: " input
-rm -r ./search-hits
-mkdir ./search-hits 
+read -p "Enter the directory you want the search to take place in: " dir
 
-for currFolder in $(find . -type d) ;
+rm -r ./search-hits # remove the directory called "search-hits"
+mkdir ./search-hits  # make a new one
+
+for currFolder in $(find "$dir" -type d) ; 
 do 
 	for myFile in "$currFolder"/* ;
 	do
@@ -20,4 +22,3 @@ do
 		fi
 	done
 done
-
