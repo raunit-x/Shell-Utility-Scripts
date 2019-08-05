@@ -11,6 +11,7 @@
 
 
 <h4>2. Password Generator(very strong passwords with upper casing and special characters) </h4>   
+<img src = 'Password Generator/Screen Shot 2019-08-05 at 11.08.31 AM.png' width = 900>
 <ul>
   <li>The script asks you to input the length of the required password</li>
   <li>The script would then prompt the user to input the number of passwords to be generated</li>
